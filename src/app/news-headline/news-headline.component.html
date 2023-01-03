@@ -1,0 +1,14 @@
+<div class="container-fluid mt-6">
+    <h2 class="text-center text-dark bold">Latest News By SkyNews </h2>
+    <h4><marquee class="text-danger">{{news[0].title}}</marquee></h4>
+    <div class="row mt-3">
+        <div class="col-lg-3 mt-3 mb-3" *ngFor=" let news of news">
+            <div class="skybox ">
+                <img src="{{news.urlToImage}}" width="100%" height="200px">
+                <h5 class="mt-3 mb-3">{{news.title}}</h5>
+                <a target="_blank" href="{{news.url}}" class="btn btn-dark btn-sm">Read More</a>
+            </div>
+        </div>
+         
+    </div>
+</div>
