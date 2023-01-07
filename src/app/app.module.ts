@@ -7,6 +7,7 @@ import { NewsHeadlineComponent } from './news-headline/news-headline.component';
 import { TopHeadlineComponent } from './top-headline/top-headline.component';
 import { HttpClientModule }  from '@angular/common/http';
 import { SkyNewsServiceService } from './service/sky-news-service.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { SkyNewsServiceService } from './service/sky-news-service.service';
     TopHeadlineComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,FormsModule,
     AppRoutingModule,
     HttpClientModule
   ],
